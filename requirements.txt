@@ -1,0 +1,16 @@
+astroid==3.2.3
+cfgv==3.4.0
+colorama==0.4.6
+dill==0.3.8
+distlib==0.3.8
+filelock==3.15.4
+identify==2.6.0
+isort==5.13.2
+mccabe==0.7.0
+nodeenv==1.9.1
+platformdirs==4.2.2
+pre-commit==3.7.1
+pylint==3.2.5
+PyYAML==6.0.1
+tomlkit==0.13.0
+virtualenv==20.26.3
