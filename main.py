@@ -1,4 +1,6 @@
-
+"""
+Este arquivo contém uma função teste
+"""
 
 def teste():
     """
