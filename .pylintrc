@@ -1,6 +1,9 @@
 [MAIN]
 
-# disable=[w9008]
+disable=
+      C0114, # Missing-module-docstring
+      C0115, # Missing-class-docstring
+      C0116, # Missing-function-docstring
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists

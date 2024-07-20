@@ -1,22 +1,22 @@
-# pylint: disable=W0105
+# pylint: disable=W0105, W0221
 """
 Arquivo html_collector
 """
-from typing import List, Dict
+from typing import List
 from bs4 import BeautifulSoup
-
+from src.interfaces.html_collector_interface import HtmlCollectorInterface
 """
 Classe HtmlCollector
 """
 
 
-class HtmlCollector:
+class HtmlCollector(HtmlCollectorInterface):
     """
     classe HTMLCollector
     """
 
     @classmethod
-    def collect_essential_information(cls, html: str) -> List[Dict[str, str]]:
+    def collect_essential_information(cls, html: str) -> List:
         """
         :param html:
         :return:

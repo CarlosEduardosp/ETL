@@ -2,7 +2,7 @@
 arquivo de teste
 """
 from requests_mock import Mocker
-from .http_requester import HttpRequester
+from src.drivers.http_requester.http_requester import HttpRequester
 
 
 def test_request_from_page(requests_mock: Mocker) -> None:

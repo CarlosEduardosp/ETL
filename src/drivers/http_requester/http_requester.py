@@ -1,12 +1,12 @@
 """
 Módulo para realizar o GET dos dados.
 """
-
 from typing import Dict
 import requests
+from src.interfaces.http_requester_interface import HttpRequesterInterface
 
 
-class HttpRequester:
+class HttpRequester(HttpRequesterInterface):
     """
     Classe HttpRequester.
     """
