@@ -3,7 +3,7 @@
 html_collector_test
 """
 from src.drivers.html_collector.html_collector import HtmlCollector
-from src.mocks.http_requester_mock import mock_request_from_page
+from src.drivers.mocks.http_requester_mock import mock_request_from_page
 #from .http_requester import HttpRequester
 
 

@@ -1,6 +1,6 @@
 from datetime import date
-from src.interfaces.http_requester_interface import HttpRequesterInterface
-from src.interfaces.html_collector_interface import HtmlCollectorInterface
+from src.drivers.interfaces.http_requester_interface import HttpRequesterInterface
+from src.drivers.interfaces.html_collector_interface import HtmlCollectorInterface
 from src.stages.contracts.extract_contract import ExtractContract
 from src.errors.extract_error import ExtractError
 

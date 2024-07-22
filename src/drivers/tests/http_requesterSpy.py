@@ -1,12 +1,9 @@
-"""
-Módulo para realizar o GET dos dados.
-"""
+# pylint: disable=W0105, W0221, C0103
 from typing import Dict
-import requests
 from src.drivers.interfaces.http_requester_interface import HttpRequesterInterface
 
 
-class HttpRequester(HttpRequesterInterface):
+class HttpRequesterSPY(HttpRequesterInterface):
     """
     Classe HttpRequester.
     """
@@ -15,7 +12,7 @@ class HttpRequester(HttpRequesterInterface):
         """
         Método construtor com a URL da requisição.
         """
-        self.__url = 'https://web.archive.org/web/20121007172955/https://www.nga.gov/collection/anZ1.htm'
+        self.request_from_page_count = 0
 
     def request_from_page(self) -> Dict:
         """
@@ -23,8 +20,8 @@ class HttpRequester(HttpRequesterInterface):
 
         :return: Dicionário com dados do GET na URL desejada.
         """
-        response = requests.get(self.__url, timeout=10)
+        self.request_from_page_count += 1
         return {
-            "status_code": response.status_code,
-            "html": response.text
+            "status_code": 200,
+            "html": "<h1>Olá Mundo!</h1>"
         }

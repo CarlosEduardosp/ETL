@@ -4,7 +4,7 @@ Arquivo html_collector
 """
 from typing import List
 from bs4 import BeautifulSoup
-from src.interfaces.html_collector_interface import HtmlCollectorInterface
+from src.drivers.interfaces.html_collector_interface import HtmlCollectorInterface
 """
 Classe HtmlCollector
 """
