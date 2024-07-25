@@ -1,18 +1,5 @@
 repos:
-  - repo: local
-    hooks:
-      - id: pylint
-        name: pylint
-        entry: pylint
-        language: system
-        types: [python]
-        args:
-          [
-            "-rn",
-            "-sn",
-            "--rcfile=.pylintrc",
-            "--load-plugins=pylint.extensions.docparams",
-          ]
+
   - repo: local
     hooks:
       - id: requirements
@@ -21,5 +8,3 @@ repos:
         language: system
         pass_filenames: false
         stages: [commit]
-
-

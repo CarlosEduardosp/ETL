@@ -14,6 +14,7 @@ def test_extract():
 
     assert isinstance(response, ExtractContract)
     assert http_requester.request_from_page()
+    assert 'html' in html_collector.collect_essential_information_attribuites
     print(response)
 
 
