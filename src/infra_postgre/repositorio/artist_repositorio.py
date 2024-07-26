@@ -5,11 +5,11 @@ from psycopg2.extras import DictCursor
 from typing import Type, Dict
 from src.infra_postgre.configs.connection.connection_db import conectar_db
 from src.infra_postgre.configs.connection.fechar_conexao import fechar_conexao_db
-from src.infra_postgre.repositorio.interfaces_repositorio.interface_repositorio import InterfaceArtistsepository
+from src.infra_postgre.repositorio.interfaces_repositorio.interface_repositorio import InterfaceArtistsrepository
 from src.stages.contracts.tranform_contract import TranformContract
 
 
-class InserirArtist(InterfaceArtistsepository):
+class InserirArtist(InterfaceArtistsrepository):
 
     # método construtor para conexão com banco de dados.
     def __init__(self, conectar_db: Type[conectar_db]):

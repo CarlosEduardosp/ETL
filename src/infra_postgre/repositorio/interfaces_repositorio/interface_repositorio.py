@@ -1,9 +1,10 @@
 from abc import ABC, abstractmethod
+from typing import Type, Dict
 
 
-class InterfaceArtistsepository(ABC):
+class InterfaceArtistsrepository(ABC):
     @abstractmethod
-    def criar_artist(self, first_name, second_name, surname, artist_id, link, created_at):
+    def criar_artist(self, artist: Dict) -> Dict:
         pass
 
     @abstractmethod
