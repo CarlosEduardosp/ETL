@@ -1,4 +1,4 @@
-from src.main import main_pipeline
+from src.run_pipeline import main_pipeline
 
 
 if __name__ =="__main__":
